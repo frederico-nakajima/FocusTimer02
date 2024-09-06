@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --hue:194;
+    --bg-color:hsla(194, 0%, 100%, 1);
+
+    --bg-color-icons:hsla(194, 9%, 89%, 1);
+    
+    --text-color:hsla(194, 6%, 21%, 1);
+
+    --primary-color:hsla(194, 97%, 31%, 1);
+
+    font-size: 62.5%;
+   
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app{
+    display: flex;
+    gap:19.2rem ;
+}
+
+#sounds{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:3.2rem ;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+
+
+#timer{
+    position: relative;
+    top: 7.0rem;       
+    left: 2.5rem; 
+    font-family: Roboto;
+    font-size:11.1rem;
+   
+    font-weight: 600;
+    
+  
+}
+
+#controls{
+    position: relative;
+    top: 8.0rem;
+    left: 3.0rem;
+    display: flex;
+    gap: 3.0rem;  
+    height: 4.8rem;
+    width: 32.5rem;   
+    cursor: pointer;
+}
+
+.selected #card {
+    fill: #004D60; /* Cor de fundo diferente quando selecionado */
+}
+
+.selected #icon path {
+    fill: white; /* Cor do desenho (ícone) alterada ao selecionar */
+}
+
+
+  
+
+ 
+  
+    
+   
+    
